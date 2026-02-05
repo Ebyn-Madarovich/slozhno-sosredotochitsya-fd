@@ -1,0 +1,113 @@
+.header {
+    block-size: 100vh;
+    min-block-size: 668px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content 1fr;
+    position: relative;
+}
+
+.header__decoration {
+    position: absolute;
+    right: 19px;
+    top: 15px;
+    color: var(--accent-color-main);
+    text-transform: uppercase;
+    font-size: var(--font-size-base);
+    line-height: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__decoration::after {
+    content: "";
+    inline-size: 9px;
+    block-size: 9px;
+    border-radius: 50%;
+    background-color: var(--accent-color-main);
+    box-shadow: 0 0 6px 2px var(--accent-color-main);
+}
+
+.header__theme-menu {
+    justify-self: end;
+    align-self: center;
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header__theme-menu-button {
+    padding: 1.5px 13px;
+    border: none;
+    background-color: transparent;
+    color: var(--accent-color-main);
+    appearance: none;
+    text-transform: lowercase;
+    font-size: var(--font-size-base);
+    line-height: 18px;
+}
+
+.heading {
+    color: var(--accent-color-minor);
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    /* Для планшета и десктопа */
+    /* clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)  */
+    text-shadow: 4px 4px 0 var(--accent-color-main);
+    font-weight: var(--font-bold);
+    line-height: 83%;
+    /* align-self: center; */
+}
+
+.heading__accent {
+    display: block;
+}
+
+.header__text {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-bold);
+    line-height: var(--line-height-base);
+    align-self: center;
+}
+
+@media (width >=768px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header__decoration {
+        top: 25px;
+        right: 29px;
+    }
+
+    .header__theme-menu {
+        grid-column: 2;
+    }
+
+    .heading {
+        /* inset-block-end: 100px; */
+        margin-left: -20px;
+        grid-column: 1 / -1;
+    }
+
+    .heading__accent {
+        display: inline;
+        padding-right: 70px;
+    }
+
+    .header__text {
+        justify-self: end;
+        grid-column: 2;
+    }
+}
+
+
+
+
+
+
+
+@media (width >=1024px) {}
