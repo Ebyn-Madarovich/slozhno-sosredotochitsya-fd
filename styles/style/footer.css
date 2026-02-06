@@ -16,10 +16,12 @@
     line-height: 83%;
 }
 
+/* ---- media width >=768px ----- */
 @media (width >=768px) {
-    /* .footer {
-        padding-top: 41px;
-    } */
+    .footer__title {
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
 }
 
-@media (width >=1024px) {}
+/* ---- media width >=1024px ----- */
+/* @media (width >=1024px) {} */
