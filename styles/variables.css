@@ -1,11 +1,14 @@
 :root {
-  --main-font: 'IBM Plex mono';
+  /* переменные стилей для по-умолчанию (dark) */
   --bg-color: rgba(0, 0, 40, 1);
   --text-color: rgba(241, 178, 206, 1);
+  --text-color-accent: rgba(0, 0, 40, 1);
   --accent-color-main: rgba(255, 0, 112, 1);
   --accent-color-minor: rgba(219, 0, 255, 1);
   --cover-image: url(../../images/cover-image-dark.png);
 
+  /* другие переменные для общих стилей проекта */
+  --main-font: 'IBM Plex mono';
   --font-bold: 700;
   --font-regular: 400;
   --font-size-base: 1.125rem;
