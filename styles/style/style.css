@@ -29,7 +29,7 @@
 
 .decorated-zone::before,
 .decorated-zone::after {
-  content: "";
+  content: '';
   position: absolute;
   width: var(--corner-size);
   height: var(--corner-size);
