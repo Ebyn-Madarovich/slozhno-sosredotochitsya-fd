@@ -10,9 +10,16 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: rgba(0, 0, 40, 1);
+  --section-title-color: rgba(255, 0, 112, 1);
+  --section-subtitle-color: rgba(0, 0, 40, 1);
+  --gallery-title-color: rgba(0, 0, 40, 1);
+  --card-title-color: rgba(0, 0, 40, 1);
   --text-color: rgba(241, 178, 206, 1);
   --text-color-accent: rgba(0, 0, 40, 1);
+  --button-color: rgba(255, 0, 112, 1);
+  --button-hover-color: rgba(255, 0, 112, 0.4);
   --accent-color-main: rgba(255, 0, 112, 1);
   --accent-color-minor: rgba(219, 0, 255, 1);
   --cover-image: url(../../images/cover-image-dark.png);
+  --corner-color: rgba(255, 0, 112, 1);
 }

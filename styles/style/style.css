@@ -23,7 +23,6 @@
   position: relative;
   --corner-size: 25px;
   --corner-thickness: 1px;
-  --corner-color: var(--accent-color-main);
   --corner-border: 10px;
 }
 

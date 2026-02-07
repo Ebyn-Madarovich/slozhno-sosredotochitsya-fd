@@ -10,65 +10,66 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: rgba(255, 241, 247, 1);
+  --section-title-color: rgba(53, 52, 48, 1);
+  --section-subtitle-color: rgba(53, 52, 48, 1);
+  --gallery-title-color: rgba(53, 52, 48, 1);
+  --card-title-color: rgba(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
   --text-color-accent: rgba(53, 52, 48, 1);
+  --button-color: rgba(53, 52, 48, 1);
+  --button-hover-color: rgba(50, 49, 45, 0.4);
   --accent-color-main: rgba(255, 141, 203, 1);
   --accent-color-minor: rgba(255, 194, 230, 1);
   --cover-image: url(../../images/cover-image-light.png);
+  --corner-color: rgba(53, 52, 48, 1);
 }
 
 :root.theme-light .header__decoration {
   display: none;
 }
 
-:root.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
 :root.theme-light .header__theme-menu-button_active {
-  border-color: currentColor;
   pointer-events: none;
-}
-
-:root.theme-light .header__theme-menu-button:hover {
-  border-color: rgba(50, 49, 45, 0.4);
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 1px;
+}
+
+.card__link:focus-visible {
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: rgba(255, 241, 247, 1);
+    --section-title-color: rgba(53, 52, 48, 1);
+    --section-subtitle-color: rgba(53, 52, 48, 1);
+    --gallery-title-color: rgba(53, 52, 48, 1);
+    --card-title-color: rgba(53, 52, 48, 1);
     --text-color: rgba(53, 52, 48, 1);
     --text-color-accent: rgba(53, 52, 48, 1);
+    --button-color: rgba(53, 52, 48, 1);
+    --button-hover-color: rgba(50, 49, 45, 0.4);
     --accent-color-main: rgba(255, 141, 203, 1);
     --accent-color-minor: rgba(255, 194, 230, 1);
     --cover-image: url(../../images/cover-image-light.png);
+    --corner-color: rgba(53, 52, 48, 1);
   }
 
   :root:not(.theme-dark) .header__decoration {
     display: none;
-  }
-
-  :root:not(.theme-dark) .header__decoration {
-    display: none;
-  }
-
-  :root:not(.theme-dark) .header__theme-menu-button {
-    color: var(--text-color);
   }
 
   :root:not(.theme-dark) .header__theme-menu-button_active {
-    border-color: currentColor;
     pointer-events: none;
   }
 
-  :root:not(.theme-dark) .header__theme-menu-button:hover {
-    border-color: rgba(50, 49, 45, 0.4);
+  :root:not(.theme-dark) .header__theme-menu-button:focus-visible {
+    outline: none;
+  }
+
+  :root:not(.theme-dark) .card__link:focus-visible {
+    outline: none;
   }
 }
